@@ -18,18 +18,15 @@ public class AtivDistPoints {
 
         //preenchendo a tabela
         for (int i = 1; i<numLinhas; i++) {
-
             List<Double> xy1 = genPoint();
             List<Double> xy2 = genPoint();
             float dist = calcDist(xy1, xy2);
 
-            for (int j = 0; j<numCol+1 ; j++) {
-                tabela[i][0] = String.format("%.2f", xy1.get(0));
-                tabela[i][1] = String.format("%.2f", xy1.get(1));
-                tabela[i][2] = String.format("%.2f", xy2.get(0));
-                tabela[i][3] = String.format("%.2f", xy2.get(1));
-                tabela[i][4] = String.format("%.2f", dist);
-            }
+            tabela[i][0] = String.format("%.2f", xy1.get(0));
+            tabela[i][1] = String.format("%.2f", xy1.get(1));
+            tabela[i][2] = String.format("%.2f", xy2.get(0));
+            tabela[i][3] = String.format("%.2f", xy2.get(1));
+            tabela[i][4] = String.format("%.2f", dist);
         }
 
         //print da tabela
