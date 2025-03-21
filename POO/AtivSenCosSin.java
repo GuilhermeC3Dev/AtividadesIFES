@@ -18,9 +18,9 @@ public class AtivSenCosSin {
         for (int i = 0 ; i < numLinhas ; i++) {
             for (int j = 0 ; j < numCol ; j++) {
                 tabela[i][0] = String.valueOf(i-1);
-                tabela[i][1] = String.format("%.3f", Math.sin(Math.toRadians(i-1)));
-                tabela[i][3] = String.format("%.3f", Math.cos(Math.toRadians(i-1)));
-                tabela[i][3] = String.format("%.3f", Math.tan(Math.toRadians(i-1)));
+                tabela[i][1] = String.format("%.2f", Math.sin(Math.toRadians(i-1)));
+                tabela[i][3] = String.format("%.2f", Math.cos(Math.toRadians(i-1)));
+                tabela[i][3] = String.format("%.2f", Math.tan(Math.toRadians(i-1)));
             }3
         }
         //adicionando categorias na tabela
