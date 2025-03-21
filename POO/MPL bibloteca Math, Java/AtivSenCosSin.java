@@ -21,7 +21,7 @@ public class AtivSenCosSin {
                 tabela[i][1] = String.format("%.2f", Math.sin(Math.toRadians(i-1)));
                 tabela[i][3] = String.format("%.2f", Math.cos(Math.toRadians(i-1)));
                 tabela[i][3] = String.format("%.2f", Math.tan(Math.toRadians(i-1)));
-            }3
+            }
         }
         //adicionando categorias na tabela
         tabela[0][0] = "Angulo";
